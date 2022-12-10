@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main-Entry point
- *return: 0 if successful
+ * main - Entry point
+ * Description: Prints the text
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
