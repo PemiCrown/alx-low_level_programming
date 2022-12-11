@@ -1,34 +1,16 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 /**
- * main - Prints alphabet
- * @void: Empty parameter list for main.
+ * main - Prints the alphabet in lowercase, except for q and e.
  *
- * Description: Prints the alphabet in lower case
- * Skip q and e
- * Can only use putchar
- *
- * Return: 0 for success
+ * Return: Always 0.
  */
 int main(void)
 {
-char letter = 'a';
-while (letter <= 'z')
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-if (letter == 'q')
-{
-letter++;
-}
-else if (letter == 'e')
-{
-letter++;
-}
-}
-else
+if (letter != 'e' && letter != 'q')
 putchar(letter);
-letter++;
-}
 }
 putchar('\n');
 return (0);
