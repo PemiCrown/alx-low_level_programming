@@ -1,9 +1,9 @@
 #include <unistd.h>
 /**
- *main : print character
- *@_putchar: writes the chracter c to stdout
+ *_putchar - writes the chracter c to stdout
  *@c: The character to print
- *Return: On success (1)
+ *Return: On success 1.
+ *On error, -1 is returned, and error is set appropriately.
  */
 int _purchar(char c)
 {
