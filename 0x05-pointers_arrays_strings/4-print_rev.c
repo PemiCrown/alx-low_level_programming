@@ -16,6 +16,6 @@ break;
 count++;
 }
 for (count--; count >= 0; count--)
-putchar(s[count]);
-putchar('\n');
+_putchar(s[count]);
+_putchar('\n');
 }
