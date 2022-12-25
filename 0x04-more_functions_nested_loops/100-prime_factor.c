@@ -26,6 +26,6 @@ test = lower + 1;
 else
 test++;
 }
-printf("%ld\n", max)
+printf("%ld\n", max);
 return (0);
 }
