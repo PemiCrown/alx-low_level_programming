@@ -25,7 +25,7 @@ if ((index % 2) != 0 && index != 0)
 printf(" ");
 }
 for (index = 0; index < 10; index++)
-{	  
+{
 if ((index + byte) >= size)
 break;
 else if (*(b + index + byte) >= 31 &&
