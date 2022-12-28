@@ -14,8 +14,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
  * If r cannot store the sum - 0.
  */
 
-char *add_strings(char *n1, char *n2, char *r, int r_index) 
-{  
+char *add_strings(char *n1, char *n2, char *r, int r_index)
+{
 int num, tens = 0;
 for (; *n1 && *n2; n1--, n2--, r_index--)
 {
