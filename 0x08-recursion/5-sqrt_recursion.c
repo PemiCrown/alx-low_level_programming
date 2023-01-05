@@ -8,7 +8,7 @@
  * Return: square root of n or -1 if none
  **/
 
-int sqr_con(int n, int i)  
+int sqr_con(int n, int i)
 {
 if (n == i * i)
 return (i);
