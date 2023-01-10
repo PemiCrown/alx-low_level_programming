@@ -10,7 +10,7 @@
  * Return: next index to check of source string
  */
 
-int strncat_mod(char *dest, char *src, int i, int str_len)  
+int strncat_mod(char *dest, char *src, int i, int str_len)
 {
 int j;
 for (j = 0; src[i] != ' ' && i < str_len; i++, j++)
