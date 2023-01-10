@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * findword - find position of next word
  * @s: string
@@ -15,7 +14,6 @@ for (i = 0; s[i] == ' '; i++)
 ;
 return (i);
 }
-
 /**
  * wordlen - find length of word
  * @s: string
@@ -29,7 +27,6 @@ for (i = 0; s[i] != '\0' && s[i] != ' '; i++)
 ;
 return (i);
 }
-
 /**
  * word_count - find number of words in string
  * @s: string
