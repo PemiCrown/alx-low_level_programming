@@ -6,7 +6,6 @@
  * @s: string
  * Return: position of next word
  **/
-
 int findword(char *s)
 {
 int i;
@@ -19,7 +18,6 @@ return (i);
  * @s: string
  * Return: length of word
  **/
-
 int wordlen(char *s)
 {
 int i;
@@ -33,7 +31,6 @@ return (i);
  * @word: switch used to track if currently in word
  * Return: number of words in string
  **/
-
 int word_count(char *s, int word)
 {
 if (s == NULL || s[0] == '\0')
@@ -50,14 +47,12 @@ return (word_count(++s, 1) + 1);
 }
 return (0);
 }
-
 /**
  * strtow - create an array of words from string
  * @str: string
  * Description: create array of words from string, last element should be null
  * Return: pointer to strings, NULL if fails
  **/
-
 char **strtow(char *str)
 {
 char **list;
