@@ -3,37 +3,39 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat -  concatenates two strings
- * @s1: string1
- * @s2: string2
- * @n: n bytes of string 2
+ * _memset -  initializes n bytes of memory to x
+ * @ptr: initial adress
+ * @x: variable to initialize with
+ * @n: number of bytes to initialize
  *
- * Return: Pointer to allocated memory of s1 + nbytes of s2
+ * Return: Return pointer char (so movements are 1 byte)
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *_memset(char *ptr, int x, unsigned int n)
 {
-unsigned int l1, l2, i, j;
-char *s;
-char *nul = "";
-if (s1 == NULL)
-s1 = nul;
-if (s2 == NULL)
-s2 = nul;
-l1 = 0, l2 = 0;
-while (*(s1 + l1))
-l1++;
-while (*(s2 + l2))
-l2++;
-if (n < l2)
-l2 = n;
-s = malloc(sizeof(char) * (l1 + l2 + 1));
-if (s == 0)
+unsigned int i;
+for (i = 0; i < n; i++)
+ptr[i] = x;
+return (ptr);
+}
+
+/**
+ * _calloc -  allocates memory using malloc and initializes in 0
+ * @nmemb: number of elements of array to allocate
+ * @size: size of elements
+ *
+ * Return: Pointer to allocated memory or normal process termination
+ * with a status value of 98
+ */
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+void *p;
+if (nmemb == 0 || size == 0)
 return (0);
-for (i = 0; i < l1; i++)
-*(s + i) = *(s1 + i);
-for (i = 0, j = l1; i < l2; j++, i++)
-*(s + j) = *(s2 + i);
-*(s + j) = '\0';
-return (s);
+p = malloc(nmemb * size);
+if (p == 0)
+return (0);
+_memset(p, 0, size * nmemb);
+return (p);
 }
