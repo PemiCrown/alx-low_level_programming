@@ -45,7 +45,7 @@ return (a * b);
  * Return: 0
  */
 
-int op_div(int a, int b)  
+int op_div(int a, int b)
 {
 return (a / b);
 }

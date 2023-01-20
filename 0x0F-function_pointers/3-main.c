@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 {
 int one, two, ans;
 int (*res)(int, int);
-char *get_op;  
+char *get_op;
 if (argc != 4)
 {
 printf("Error\n");
